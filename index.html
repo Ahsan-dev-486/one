@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/query.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="contaner">
+        <div class="header">
+            <div class="logo">
+                <h1> Portfolio</h1>
+            </div>
+            <div class="manu-side">
+                <input type="checkbox" name="" id="manu-toggle" hidden>
+                <label for="manu-toggle" class="manu-icon"><i class="fa-solid fa-bars"></i></label>
+                <label for="manu-toggle" class="overlay"></label>
+                <nav>
+                    <a href="#" style="--i:1" data-sect="home" class="navlink active">Home</a>
+                    <a href="#" style="--i:2" data-sect="service" class="navlink">Services</a>
+                    <a href="#" style="--i:3" data-sect="about" class="navlink">About</a>
+                    <a href="#" style="--i:4" data-sect="contact" class="navlink">contact</a>
+                </nav>
+            </div>
+        </div>
+        <section id="home" class="content active">
+            <div class="home-detail">
+                <h2> <span>web</span> dev</h2>
+                <h3>
+                    i`m <span class="span"></span>
+                </h3>
+                <p class="det-para">I am a Frontend Web Developer. I specialize in transforming creative designs into pixel-perfect, responsive, and high-performance websites. By leveraging modern tools like HTML5, CSS3 and JavaScript </p>
+                <div class="bottom">
+                    <button class="btn">Download</button>
+                    <div class="social-icon">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-github"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="home-img">
+                <img src="assets/WhatsApp Image 2026-02-23 at 7.58.56 PM.jpeg" alt="">
+            </div>
+        </section>
+        <section id="service" class="content ">
+            <div class="service-head">
+                <h2 class="det hed">My <span class="span-green" >Services</span></h2>
+            </div>
+            <div id="services-list" class="services-container">
+                
+            </div>
+        </section>
+        <section id="about" class="content">
+            <div class="about-side">
+                <div class="side-bar">
+                    <h3 class="span-green">Hire ?</h3>
+                    <p>I am a Frontend Web Developer. I specialize in transforming creative designs into pixel-perfect, responsive, and high-performance websites. By leveraging modern tools like HTML5, CSS3 and JavaScript </p>
+                    <div class="tabs">
+                        <span data-tab="experiance" class="tab active">Experiance</span>
+                        <span data-tab="education" class="tab">Education</span>
+                        <span data-tab="skill" class="tab">Skill</span>
+                    </div>
+                </div>
+                <div class="side-content">
+                    <aside id="experiance" class="tab-content active">
+                <h2>My <span class="span-green">Experiance</span></h2>
+                <p class="exper">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et aperiam quod suscipit dolorum illum eos quaerat dicta. Magni, cupiditate eum.</p>
+                <div class="experiance-list">  
+                    
+                </div>
+                    </aside>
+                <aside id="education" class="tab-content">
+                        <h2>My <span class="span-green">Education</span></h2>
+                <p class="exper">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et aperiam quod suscipit dolorum illum eos quaerat dicta. Magni, cupiditate eum.</p>
+                <div class="education-list">
+                </div>
+                </aside>
+                <aside id="skill" class="tab-content">
+                        <h2>My <span class="span-green">Skill</span></h2>
+                <p class="exper">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et aperiam quod suscipit dolorum illum eos quaerat dicta. Magni, cupiditate eum.</p>
+                <div class="skill-list">
+                    
+                </div>
+                </aside>
+                        </div>
+                    </div>
+                </section>
+        <section id="contact" class="content"><h2> 
+        </h2></section>
+    </div>
+
+
+    <script src="script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+@media screen and (max-width : 650px) {
+    .manu-icon{
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: 700;
+        z-index: 1000;
+    }
+    .overlay{
+        display: none;
+        opacity: 0;
+        z-index: 999;
+    }
+    #manu-toggle:checked ~ .overlay{
+        display: block;
+        opacity: 1;
+        position: fixed;
+        inset: 0;
+        top: 90px;
+        background-color: var(--primary);
+        min-height: 100dvh;
+        transition: all 3s ease;
+        -webkit-transition: all 3s ease;
+        -moz-transition: all 3s ease;
+        -ms-transition: all 3s ease;
+        -o-transition: all 3s ease;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    gap: 1.5rem;
+    z-index: 1000;
+    transform: translateX(150%);
+    -webkit-transform: translateX(150%);
+    -moz-transform: translateX(150%);
+    -ms-transform: translateX(150%);
+    -o-transform: translateX(150%);
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+}
+nav a{
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0.8rem;
+    border: 3px solid var(--secondary);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    opacity: 0;
+    transform: translateX(150%);
+    -webkit-transform: translateX(150%);
+    -moz-transform: translateX(150%);
+    -ms-transform: translateX(150%);
+    -o-transform: translateX(150%);
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+}
+#manu-toggle:checked ~ nav{
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+}
+#manu-toggle:checked ~ nav a{
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transition-delay: calc(var(--i) * .2s);
+    opacity: 1;
+}
+#home.content.active{
+        display: flex;
+        flex-direction: column-reverse;
+        overflow: hidden;
+    }
+    .home-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .home-detail h2 { font-size: 2.2rem; }
+    .home-detail h3 { font-size: 1.8rem;  }
+    .home-detail p { width: 100%;  max-width: 400px; }
+
+    .services-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    /* About Section - Stack Layout */
+    .about-side {
+        grid-template-columns: 1fr; /* Side-bar upar, Content niche */
+    }
+
+    .side-bar {
+        
+        padding: 0;
+    }
+
+    .tabs {
+        flex-direction: row; /* Mobile par tabs side-by-side */
+        flex-wrap: wrap;
+        margin: 1.5rem auto;
+    }
+
+    .tabs .tab {
+        padding: 12px;
+        font-size: 16px;
+        width: calc(33.33% - 10px); /* 3 tabs in one row */
+    }
+
+    .side-content {
+        padding: 20px 0;
+    }
+
+    /* Skills Grid Fix */
+    .skill-list {
+        grid-template-columns: 1fr 1fr; /* Do icons ek line mein */
+        justify-items: center;
+        padding: 1rem;
+    }
+
+    .skill-box {
+        width: 130px;
+        height: 130px;
+    }
+    .tabs .tab {
+        width: 100%; /* Bahut choti screen par tabs firse vertical */
+    }
+
+}
+
+
+
+
+
+
+/* Tablet and Small Screens (Max 1024px) */
+@media screen and (max-width: 1024px) {
+    .contaner {
+        max-width: 90vw;
+    }
+    #home.content.active {
+        gap: 4rem;
+    }
+    .home-img {
+        width: 320px;
+        height: 320px;
+    }
+}
+
+/* Mobile Screens (Max 768px) */
+@media screen and (max-width: 768px) {
+    /* Header & Nav Fix */
+    .header {
+        padding: 10px 0;
+    }
+    nav {
+        font-size: 20px;
+        gap: 10px;
+    }
+
+    .home-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .home-detail h2 { font-size: 2.2rem; }
+    .home-detail h3 { font-size: 1.8rem;  }
+    .home-detail p { width: 100%;  max-width: 400px; }
+    .bottom { justify-content: ; }
+
+    /* Services Section - 1 Column */
+    
+}
+
+
+/* Extra Small Screens (Max 480px) */
+@media screen and (max-width: 480px) {
+    .tabs .tab {
+        width: 100%; /* Bahut choti screen par tabs firse vertical */
+    }
+    .manu-icon{
+        z-index: 99999;
+    }
+    .home-img {
+        width: 200px;
+        height: 200px;
+    }
+    .social-icon{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .home-detail h2 { font-size: 2.2rem; }
+    .home-detail h3 { font-size: 1.8rem;  }
+    .home-detail p { width: 100%;  max-width: 300px; }
+}
